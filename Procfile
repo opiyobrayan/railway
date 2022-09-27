@@ -1,1 +1,1 @@
-gunicorn kitchen.wsgi --log -
+web: gunicorn kitchen.wsgi --log-file -
