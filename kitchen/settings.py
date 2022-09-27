@@ -128,3 +128,4 @@ STATICFILES_DIR=[
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+CSRF_TRUSTED_ORIGINS=['https://*.railway-production-fe80.up.railway.app/']
