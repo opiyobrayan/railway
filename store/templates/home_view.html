@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KELIN</title>
+</head>
+{% block content %}
+<style>
+        * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+</style>
+
+{% load static %}
+<img  src="{% static 'kelin.png' %}">
+
+
+        <div class="container">
+          <h4 class="text-center"><u>Year: 2022</u></h4>
+            <h4 class="text-center"><u>Month: June</u></h4><br>            
+            <table class="table table-success table-striped">
+            <thead>
+                <tr>
+                    
+                    <th>Product</th>
+                    <th>Price </th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+            <!-- jinja2 Technique -->
+            {% if table %}  
+            {% for i in table %}
+                <tr>
+                <td>{{i.Product}}</td>
+                <td>{{i.Price}}</td>
+                <td>{{i.Quantity}}</td>
+                <td>{{i.Total}}</td>
+                
+                </tr>
+            {% endfor %}
+            {% endif %}
+            </tbody>
+            </table>
+        </div>
+
+        <table class="table table-bordered">
+          <thread>
+              <!-- <tr>
+                  <th> </th>
+                  <th> Description</th>
+                  <th>Copies In Store</th>
+                  <th>Distributed Copies</th>
+          </tr> -->
+          </thread>
+          <tbody>
+              <tr>
+                  <td> Prepared by: </td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Signature:</td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Date:</td>
+                  <!-- <td> <u> signhere</u></td> -->
+              </tr>
+              
+          
+              <tr>
+                  <td> Checked by:</td>
+                  <!-- <td> <u></u></td> -->
+                  <td> Signature:</td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Date:</td>
+                  <!-- <td> <u> sign</u></td> -->
+              </tr>
+              <br>
+              <tr>
+                  <td> Approved by: </td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Signature:</td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Date:</td>
+                  <!-- <td> <u> sign</u></td> -->
+              </tr>
+          </tbody>
+          
+          </table>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+      
+       
+       {% load static %}
+      <img  src="{% static 'kelin.png' %}">
+
+        <div class="container">
+          <h4 class="text-center"><u>Year: 2022 </u></h4>
+            <h4 class="text-center"><u>Month: July</u></h4><br>            
+            <table class="table table-success table-striped">
+            <thead>
+                <tr>
+                    
+                    <th>Product</th>
+                    <th>Price </th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+            <!-- jinja2 Technique -->
+            {% if july %}  
+            {% for i in july %}
+                <tr>
+                <td>{{i.Product}}</td>
+                <td>{{i.Price}}</td>
+                <td>{{i.Quantity}}</td>
+                <td>{{i.Total}}</td>
+                
+                </tr>
+            {% endfor %}
+            {% endif %}
+            </tbody>
+            </table>
+        </div>
+        <table class="table table-bordered">
+          <thread>
+              <!-- <tr>
+                  <th> </th>
+                  <th> Description</th>
+                  <th>Copies In Store</th>
+                  <th>Distributed Copies</th>
+          </tr> -->
+          </thread>
+          <tbody>
+              <tr>
+                  <td> Prepared by: </td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Signature:</td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Date:</td>
+                  <!-- <td> <u> signhere</u></td> -->
+              </tr>
+              
+          
+              <tr>
+                  <td> Checked by:</td>
+                  <!-- <td> <u></u></td> -->
+                  <td> Signature:</td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Date:</td>
+                  <!-- <td> <u> sign</u></td> -->
+              </tr>
+              <br>
+              <tr>
+                  <td> Approved by: </td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Signature:</td>
+                  <!-- <td> <u> sign</u></td> -->
+                  <td> Date:</td>
+                  <!-- <td> <u> sign</u></td> -->
+              </tr>
+          </tbody>
+          
+          </table>
+    
+{% endblock %}

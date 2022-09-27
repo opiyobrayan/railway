@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KELIN-Store</title>
+</head>
+<body>
+{% block content %}
+<br>
+<h1> Products </h1>
+<br>
+{% for p in product %}
+    <div class="card">
+      <h5 class="card-header">{{p}}</h5>
+      <div class="card-body">
+        <ul class="card-title"><b>Price: </b>{{p.price}}</ul>
+        <ul class="card-title"> <b>Quantity: </b> {{p.quantity}}</ul>
+      </div>
+    </div>
+    <br>
+{% endfor %}
+
+
+{% endblock %}
+</body>
+</html>

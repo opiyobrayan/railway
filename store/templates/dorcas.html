@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KELIN-Store</title>
+</head>
+{% block content %}
+
+{% load static %}
+<body>
+
+    <style>
+        * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+    .column2 {
+      float: left;
+      width: 40%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+      padding:5px;
+    }
+ </style>
+
+<div class="row">
+    <div class="column">
+
+        <h3> NAME:</h3>
+        <br>
+        <h3>...............................................</h3>
+        
+        <h3>AFFILIATION:</h3>
+        <br>
+        <h3>...............................................</h3>
+        <br>
+        <h3>PRONOUN:</h3>
+        <br>
+        <h3>...............................................</h3>
+        {% load static %}
+        <br>
+
+        <div class="column2">
+            <img  src="{% static 'Picture1.png' %}" style="width:100px;height:100px;padding:7px;">
+            </div>
+            <div class="column2">
+            <img  src="{% static 'kelin.png' %}" style="width:150px;height:100px;padding:7px;">
+        </div>
+    </div>
+    <div class="column">
+
+        <h3> NAME:</h3>
+        <br>
+        <h3>...............................................</h3>
+        
+        <h3>AFFILIATION:</h3>
+        <br>
+        <h3>...............................................</h3>
+        <br>
+        <h3>PRONOUN:</h3>
+        <br>
+        <h3>...............................................</h3>
+        {% load static %}
+        <br>
+
+        <div class="column2">
+        <img  src="{% static 'Picture1.png' %}" style="width:100px;height:100px;padding:7px;">
+        </div>
+        <div class="column2">
+        <img  src="{% static 'kelin.png' %}" style="width:150px;height:100px;padding:7px;">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    
+    <div class="column">
+
+        <h3> NAME:</h3>
+        <br>
+        <h3>...............................................</h3>
+        
+        <h3>AFFILIATION:</h3>
+        <br>
+        <h3>...............................................</h3>
+        <br>
+        <h3>PRONOUN:</h3>
+        <br>
+        <h3>...............................................</h3>
+        {% load static %}
+        <br>
+
+        <div class="column2">
+            <img  src="{% static 'Picture1.png' %}" style="width:100px;height:100px;padding:7px;">
+            </div>
+            <div class="column2">
+            <img  src="{% static 'kelin.png' %}" style="width:150px;height:100px;padding:7px;">
+        </div>
+    </div>
+    <div class="column">
+
+        <h3> NAME:</h3>
+        <br>
+        <h3>...............................................</h3>
+        
+        <h3>AFFILIATION:</h3>
+        <br>
+        <h3>...............................................</h3>
+        <br>
+        <h3>PRONOUN:</h3>
+        <br>
+        <h3>...............................................</h3>
+        {% load static %}
+        <br>
+
+        <div class="column2">
+            <img  src="{% static 'Picture1.png' %}" style="width:100px;height:100px;padding:7px;">
+            </div>
+            <div class="column2">
+            <img  src="{% static 'kelin.png' %}" style="width:150px;height:100px;padding:7px;">
+        </div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>
